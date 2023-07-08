@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+:root {
+    --main-color: rgb(8, 8, 252);
+    --hover-color: rgb(73, 8, 252, 0.5);
+    --primary-color: rgba(26, 26, 26, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100vh;
+  }
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.navbar {
+    padding-top: 1rem;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.branding {
+    max-width: 6rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-bottom: 4px solid white;
+}
+
+.big-e {
+    font-size: 3.5rem;
+}
+
+.small-content {
+    margin-top: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    margin: 0.5rem auto 0.4rem auto;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-item {
+    /* position: relative; */
+    list-style-type: none;
+    margin-left: 1.5rem;
+    width: 5rem;
+    cursor: pointer;
+}
+
+.nav-link {
+    position: relative;
+    padding: 3px 0;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: 0.4s all ease-in-out;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+.nav-link::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    right: 0;
+    background-color: var(--main-color);
+    transform: scale(0, 1);
+    transition: 0.3s all ease-in-out;
+    transform-origin: 0% 100%;
+}
+
+.nav-link:hover::after {
+    transform: scale(1, 1);
+}
+
+.main-content {
+    margin: 9rem 0 0 0;
+    font-size: 1.1rem;
+}
+
+.small-space {
+    padding: 1px 0;
+    font-size: 0.8em;
+    border-radius: 1rem;
+    margin: 0 auto;
+    width: 11rem;
+    background-color: white;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.main-heading {
+    margin-top: 0.3rem;
+    text-align: center;
+    color: white;
+}
+
+.main-heading span {
+    padding: 0 3px;
+    color: var(--main-color);
+}
+
+.main-para {
+    color: white;
+    width: 25rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.btn-main {
+    position: relative;
+    display: block;
+    margin: 1rem auto;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--main-color);
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+}
+
+.btn-main::after {
+    position: absolute;
+    content: 'Explore';
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--hover-color);
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: all 0.4s ease;
+    color: white;
+}
+
+.btn-main:hover::after {
+    transform: scale(1, 1);
+}
+
+
+.brand-heading {
+    margin: 15rem 0 1.5rem 0;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.my-brands {
+    padding: 1rem 0 1rem 4rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: var(--primary-color);
+    flex-wrap: wrap;
+}
+
+.brand {
+    width: 10rem;
+}
+
+.brand:nth-child(1) {
+    width: 7rem;
+}
+
+.brand:nth-child(2) {
+    width: 7rem;
+}
+
+.services {
+    color: white;
+    max-width: 90%;
+    margin: 10rem auto 0 auto;
+}
+
+.services h3 {
+    margin: 1rem 0;
+}
+
+.services-heading {
+    font-size: 2rem;
+    margin: 1.5rem;
+    text-align: center;
+}
+
+.sec-service {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.service {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    margin: 5rem auto 0 auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.contact-info {
+    color: white;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+.tel{
+    color: gray;
+}
+
+.my-form {
+    margin: 1rem 0;
+}
+
+.send {
+    color: white;
+}
+
+.my-text {
+    display: block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    caret-color: var(--main-color);
+    color: var(--main-color);
+}
+
+.name {
+    width: 20rem;
+}
+
+.email {
+    width: 20rem;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.fa-facebook {
+    color: blue;
+}
+
+.fa-instagram {
+    color: rgb(234, 144, 159);
+}
+
+.fa-whatsapp {
+    color: rgb(8, 188, 8);
+}
+
+iframe {
+    border-radius: 0.3rem;
+}
+
+.submit {
+    margin: 1rem auto;
+    padding: 0.7rem 8.5rem;
+    background-color: var(--main-color);
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out
+}
+
+.location-heading {
+    margin: 1rem 0;
+}
+
+
+
+
+
+
+@media (max-width: 660px) {
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 1.3rem;
+        right: 1.5rem;
+    }
+
+    .hamburger.active .l2 {
+        opacity: 0;
+    }
+
+    .hamburger.active .l1 {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .l3 {
+        transform: translateY(-11px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        gap: 1rem;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.4s ease;
+    }
+
+    nav-item {
+        margin: 2rem 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .main-para {
+        width: 20rem;
+    }
+
+    .main-content {
+        margin-top: 5.5rem;
+    }
+
+    .my-brands {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+    }
+    
+    .sec-service {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .find-location {
+        margin-top: 2rem;
+    }
+
+    .find-location h2 {
+        text-align: center;
+    }
+
+    .message {
+        padding: 1.3rem;
+    }
+}
