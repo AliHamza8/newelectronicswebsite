@@ -192,6 +192,49 @@ header {
     transform: scale(1, 1);
 }
 
+.dummy-products {
+    width: 90%;
+    margin: 15rem auto 5rem auto;
+}
+
+.dummy-products h1 {
+    font-size: 1.5rem;
+    background-color: var(--main-color);
+    color: white;
+    padding: 0.3rem;
+    width: 9rem;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.dummy-products p {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.inside-dummy-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.products-d-image-inside {
+    width: 18rem;
+    padding: 1.5rem;
+}
+
+.image-des {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    background-color: var(--main-color);
+    border-radius: 0.3rem;
+}
 
 .brand-heading {
     margin: 15rem 0 1.5rem 0;
@@ -406,6 +449,13 @@ iframe {
 
     .main-content {
         margin-top: 5.5rem;
+    }
+
+    .inside-dummy-images {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     .my-brands {
