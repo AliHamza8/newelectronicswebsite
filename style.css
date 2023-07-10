@@ -70,6 +70,7 @@ header {
 .nav-menu {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .hamburger {
@@ -89,14 +90,14 @@ header {
 }
 
 .nav-item {
+    position: relative;
     list-style-type: none;
-    margin-left: 1.5rem;
+    margin-left: 2rem;
     width: 5rem;
     cursor: pointer;
 }
 
 .nav-link {
-    position: relative;
     padding: 3px 0;
     font-size: 1.1rem;
     text-decoration: none;
@@ -104,6 +105,52 @@ header {
     color: white;
     position: relative;
     width: 100%;
+}
+
+.nav-item:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+.drop-effect {
+    position: relative;
+}
+
+.drop {
+    padding: 1px;
+    color: white;
+    margin-left: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.drop-down {
+    display: none;
+    position: absolute;
+    top: 1.8rem;
+    left: -1.5rem;
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    transition: 1s all ease-out;
+}
+
+.drop-list {
+    list-style: none;
+    padding: 0.5rem 1rem;
+}
+
+.drop-list a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s all ease-in-out;
+}
+
+.drop-list a:hover {
+    color: var(--main-color);
+}
+
+.drop-effect.active .drop-down {
+    display: block;
 }
 
 .nav-link::after {
@@ -337,7 +384,7 @@ footer {
 }
 
 .my-text:focus {
-    outline: 3px solid var(--main-color);
+    outline: 4px solid var(--main-color);
 }
 
 .name {
@@ -396,6 +443,12 @@ iframe {
     margin: 1rem 0;
 }
 
+.copy {
+    text-align: center;
+    color: white;
+    background-color: var(--primary-color);
+}
+
 
 
 
@@ -432,6 +485,7 @@ iframe {
         width: 100%;
         text-align: center;
         transition: 0.4s ease;
+        padding: 1rem 0;
         z-index: 1;
     }
 
@@ -441,6 +495,13 @@ iframe {
 
     .nav-menu.active {
         left: 0;
+    }
+
+    .drop-down {
+        top: 2rem;
+        left: 0rem;
+        background-color: black;
+        z-index: 1;
     }
 
     .main-para {
