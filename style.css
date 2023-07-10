@@ -451,6 +451,76 @@ iframe {
 
 
 
+/* Refrigerator Products Page */
+.view-products {
+    margin-top: 5rem;
+}
+
+.product-head-section {
+    position: relative;
+    margin: 0 auto;
+    max-width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product-heading {
+    color: white;
+    font-size: 2rem;
+}
+
+.filter {
+    cursor: pointer;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: -2.3rem;
+    right: -5rem;
+    background-color: var(--main-color);
+    color: white;
+    width: 17rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.5rem;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.filter:hover + .tooltip {
+    display: block;
+}
+
+.drop-down-pro {
+    display: none;
+    position: absolute;
+    top: 2.6rem;
+    right: -2rem;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+.drop-list-pro {
+    padding: 1rem;
+    list-style: none;
+}
+
+.drop-list-pro a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.drop-list-pro a:hover {
+    color: var(--main-color);
+}
+
+.filter.active .drop-down-pro {
+    display: block;
+}
+
 
 
 
