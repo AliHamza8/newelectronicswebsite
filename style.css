@@ -521,6 +521,25 @@ iframe {
     display: block;
 }
 
+.view-product-section {
+    width: 90%;
+    margin: 5rem auto;
+    background-color: var(--primary-color);
+}
+
+.images-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.refrigerator-images {
+    width: 15rem;
+}
+
 
 
 
