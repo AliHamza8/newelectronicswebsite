@@ -523,7 +523,7 @@ iframe {
 
 .view-product-section {
     width: 90%;
-    margin: 5rem auto;
+    margin: 3rem auto;
     background-color: var(--primary-color);
 }
 
@@ -533,12 +533,60 @@ iframe {
     justify-content: space-between;
     margin: 0 auto;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.images-wrapper a {
+    text-decoration: none;
 }
 
 .refrigerator-images {
-    width: 15rem;
+    width: 20rem;
 }
+
+.product-specs {
+    padding: 1rem;
+    width: 15rem;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.model {
+    text-align: center;
+    width: 12rem;
+    color: white;
+    margin: 0 auto;
+}
+
+.product-description h2 {
+    text-align: center;
+    width: 13rem;
+    margin: 0 auto;
+    color: white;
+}
+
+.btn-scroll-top {
+    padding: 0.8rem;
+    background-color: var(--main-color);
+    position: fixed;
+    top: 90vh;
+    right: 2vw;
+    border-radius: 0.3rem;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-scroll-top:hover {
+    outline: 3px solid var(--main-color);
+}
+
+
+
+
+
 
 
 
