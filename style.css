@@ -284,10 +284,14 @@ header {
 }
 
 .brand-heading {
-    margin: 15rem 0 1.5rem 0;
+    /* margin: 15rem 0 1.5rem 0; */
+    margin: 15rem auto 1.5rem auto;
+    background-color: var(--main-color);
     font-size: 2rem;
     color: white;
     text-align: center;
+    border-bottom: 3px solid var(--main-color);
+    border-top: 3px solid var(--main-color);
 }
 
 .my-brands {
@@ -530,7 +534,8 @@ iframe {
 .images-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     margin: 0 auto;
     flex-wrap: wrap;
     gap: 1rem;
@@ -622,7 +627,7 @@ iframe {
         width: 100%;
         text-align: center;
         transition: 0.4s ease;
-        padding: 1rem 0;
+        padding: 0.5rem 1rem;
         z-index: 1;
     }
 
