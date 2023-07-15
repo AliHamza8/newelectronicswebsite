@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
 
 :root {
-    /* --main-color: rgb(8, 8, 252); */
-    --main-color: rgb(6, 129, 80);
+    --main-color: rgb(4, 4, 131);
     --hover-color: rgb(73, 8, 252, 0.5);
     --primary-color: rgba(26, 26, 26, 0.616);
-    /* --primary-color: rgba(26, 26, 26, 0.8); */
 }
 
 * {
