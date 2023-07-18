@@ -609,7 +609,7 @@ iframe {
     background-color: var(--main-color);
     position: fixed;
     top: 90vh;
-    right: 2vw;
+    right: 3vw;
     border-radius: 0.3rem;
     border: 0;
     cursor: pointer;
