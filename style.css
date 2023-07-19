@@ -128,7 +128,7 @@ header {
 
 .nav-link {
     padding: 3px 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-decoration: none;
     transition: 0.4s all ease-in-out;
     color: white;
@@ -611,7 +611,7 @@ iframe {
     background-color: var(--main-color);
     position: fixed;
     top: 90vh;
-    right: 1rem;
+    right: 0;
     border-radius: 0.3rem;
     border: 0;
     cursor: pointer;
